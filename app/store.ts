@@ -11,5 +11,7 @@ export const useStore = create<TimerState>()((set) => ({
   pause: true,
   time: "00:00",
   handlePlaying: () => set((state) => ({ pause: state.pause ? false : true })),
-  updateTime: () => set((state) => ({ time: state.time })),
+  updateTime: (value) => {
+    set({ time: value });
+  },
 }));
