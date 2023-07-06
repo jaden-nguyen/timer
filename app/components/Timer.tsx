@@ -35,7 +35,6 @@ const Timer = () => {
         setTimeout(() => {
           setSeconds(seconds);
         }, 1000);
-        // updateTime(`${min[0]}${min[1]}:${seconds}`);
       }
       const interval = setInterval(() => {
         setSeconds((prev) => prev - 1);
